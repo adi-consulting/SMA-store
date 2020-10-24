@@ -1,0 +1,1 @@
+# SMA-store-service
