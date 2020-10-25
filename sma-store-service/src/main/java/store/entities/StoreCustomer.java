@@ -10,15 +10,11 @@ import javax.persistence.*;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name="sma_Store")
+@Table(name="smaStore")
 public class StoreCustomer {
     @Id
     @GeneratedValue
     private Long id;
-
-    @Column(name = "store_id")
     private Long storeId;
-
-    @Column(name = "customer_id")
     private Long customertId;
 }
