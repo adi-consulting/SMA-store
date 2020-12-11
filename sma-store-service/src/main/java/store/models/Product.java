@@ -1,24 +1,16 @@
-package referential.entities.product;
+package store.models;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-
-import javax.persistence.*;
+import javax.persistence.Column;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 import java.util.Date;
 
-@Data
-@AllArgsConstructor
-@NoArgsConstructor
-@MappedSuperclass
 public class Product {
-    @Id
-    @GeneratedValue
-    protected Long id;
 
-    @Column(nullable = false)
+    protected Long idProduct;
+
     protected String productType;
-    
+
     protected String code;
 
     protected String picture;

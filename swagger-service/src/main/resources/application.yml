@@ -1,0 +1,18 @@
+
+
+
+server:
+  port: 8093
+
+spring:
+  application:
+    name: swagger-service
+
+  profiles:
+    active: dev
+
+eureka:
+  client:
+    enabled: false
+
+

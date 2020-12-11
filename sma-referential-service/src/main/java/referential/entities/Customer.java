@@ -4,33 +4,35 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.util.Date;
 
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
+@Table(name = "smaCustomer")
 public class Customer {
     @Id
     @GeneratedValue
     private Long id;
 
-    @Column(name = "first_name", nullable = false)
+    @Column(nullable = false)
     private String firstName;
 
-    @Column(name = "last_name", nullable = false)
+    @Column(nullable = false)
     private String lastName;
 
-    @Column(name = "date_of_bird", nullable = false)
+    @Column(nullable = false)
     private Date dateOfBird;
 
-    @Column(name = "call_number")
     private String callNumber;
 
     private String email;
+
+    private boolean active;
+
+    @OneToOne(fetch = FetchType.LAZY , cascade = CascadeType.ALL)
+    private Address address;
 
 }

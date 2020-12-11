@@ -1,0 +1,12 @@
+
+zuul:
+  routes:
+    sma-store-service:
+      path:  /sma-store-service/**
+      serviceId: sma-store-service
+      # url: http://referentiel-service:8084
+      url: http://localhost/sma-store-service
+    sma-referential-service:
+      path:  /sma-referential-service/**
+      serviceId: sma-referential-service
+      url: http://localhost/sma-referential-service

@@ -20,9 +20,12 @@ public class Store {
     @Id
     @GeneratedValue
     private Long id;
+    private Long groupId;
     private String code;
+    @Column(nullable = false)
     private String shopName;
     private Long idAddress;
+    private Boolean active;
 
     @Transient
     private List<Manager> managers;

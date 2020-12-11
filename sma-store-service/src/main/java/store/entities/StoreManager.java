@@ -15,6 +15,8 @@ public class StoreManager {
     @Id
     @GeneratedValue
     private Long id;
+    @Column(nullable = false)
     private Long storeId;
+    @Column(nullable = false)
     private Long managerId;
 }

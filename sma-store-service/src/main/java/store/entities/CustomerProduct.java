@@ -15,7 +15,9 @@ public class CustomerProduct {
     @Id
     @GeneratedValue
     private Long id;
+    @Column(nullable = false)
     private Long customerId;
+    @Column(nullable = false)
     private Long productId;
     private String productType;
     private String picture;

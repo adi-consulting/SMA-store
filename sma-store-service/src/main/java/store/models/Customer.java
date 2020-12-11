@@ -27,6 +27,5 @@ public class Customer {
 
     private String email;
 
-    @Transient
     private Address address;
 }

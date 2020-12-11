@@ -17,18 +17,14 @@ public class Manager {
     @GeneratedValue
     private Long id;
 
-    @Column(name = "first_name", nullable = false)
     private String firstName;
 
-    @Column(name = "last_name", nullable = false)
     private String lastName;
 
-    @Column(name = "date_of_bird")
     private GregorianCalendar dateOfBird;
 
     private String email;
 
-    @Column(name = "call_number")
     private String callNumber;
 
 }

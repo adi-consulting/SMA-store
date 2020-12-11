@@ -10,11 +10,13 @@ import javax.persistence.*;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name="smaStore")
+@Table(name="smaStoreCustomer")
 public class StoreCustomer {
     @Id
     @GeneratedValue
     private Long id;
+    @Column(nullable = false)
     private Long storeId;
-    private Long customertId;
+    @Column(nullable = false)
+    private Long customerId;
 }
