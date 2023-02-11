@@ -1,0 +1,42 @@
+.example-container {
+    position: absolute;
+    top: 38px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  .example-sidenav {
+    width: calc(40px + 3vh);
+  }
+  
+  .example-header {
+    display: unset;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  .background-content {
+    background-color: rgb(240, 240, 240);
+    overflow-x: hidden !important;
+  }
+  
+  .example-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  .navMenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 98%;
+    height: 100%;
+    margin: auto;
+  }
+  
+  

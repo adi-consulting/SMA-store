@@ -12,6 +12,7 @@ import referential.services.CustomerService;
 
 import java.util.List;
 
+@CrossOrigin()
 @RestController
 public class CustomerController {
 

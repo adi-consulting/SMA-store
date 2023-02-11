@@ -1,0 +1,130 @@
+#regionMenu {
+    background-color: white;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    margin: 15px;
+  }
+  
+  #regionMenu, #regionContainer {
+    width: 98%;
+    margin: 1rem auto;
+    background-color: white;
+    user-select: none;
+    -moz-user-select: none;
+  }
+  
+  img {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+  }
+  
+  
+  #addButton {
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color: #00a5aa;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 0px;
+    margin-left: 10px;
+  }
+  
+  .addImg {
+    width: 35px;
+    height: 35px;
+    padding: 5px;
+  }
+  
+  .factories {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  #regionTable {
+    width: 96%;
+    margin: auto;
+  }
+  
+  #regionTable table {
+    width: 100%
+  }
+  
+  .sortIcon {
+    vertical-align: bottom;
+    margin-left: 1rem;
+  }
+  
+  #regionTable img {
+    width: 3rem;
+  }
+  
+  #regionTable th {
+    align-items: center;
+    max-width: 20%;
+    padding: 0.5rem;
+  }
+  
+  #regionTable td {
+    padding: 0.5rem;
+  }
+  
+  #translationFooter {
+    display: flex;
+    -webkit-box-pack: end;
+    justify-content: flex-end;
+    padding: 1rem;
+  }
+  
+  #regionHeader {
+    padding: 15px;
+  }
+  
+  #pageAndSearch {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 96%;
+    margin: 0.5rem auto;
+  }
+  
+  
+  
+  td mat-icon {
+    cursor: pointer;
+  }
+  
+  #breakword {
+    word-wrap: break-word; max-width: 15ch;
+  }
+  
+  .greenPin {
+    background-color: #42b284;
+    border-radius: 1rem;
+  }
+  
+  .redPin {
+    background-color: #e84155;
+    border-radius: 1rem;
+  }
+  
+  .btnEdition {
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    border-color: white;
+    border: 0px;
+    width:40px;
+    outline: none;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 85px;
+  }
+  

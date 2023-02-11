@@ -1,0 +1,14 @@
+<ng-container>
+  
+  <mat-toolbar class="example-header">
+    <app-top-navigation-bar></app-top-navigation-bar>
+  </mat-toolbar>
+  <mat-sidenav-container class="example-container">
+    <mat-sidenav mode="side" opened >
+      <app-navigation-menu></app-navigation-menu>
+    </mat-sidenav>  
+    <mat-sidenav-content class="background-content">
+      <router-outlet style="overflow-x: hidden" (activate)="onActivate($event)"></router-outlet>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</ng-container>

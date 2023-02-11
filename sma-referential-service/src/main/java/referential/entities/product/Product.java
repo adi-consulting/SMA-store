@@ -3,6 +3,8 @@ package referential.entities.product;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import referential.model.ProductStatus;
+import referential.model.ProductType;
 
 import javax.persistence.*;
 import java.util.Date;
@@ -17,7 +19,8 @@ public class Product {
     protected Long id;
 
     @Column(nullable = false)
-    protected String productType;
+    @Enumerated(EnumType.STRING)
+    protected ProductType productType;
     
     protected String code;
 
@@ -35,7 +38,10 @@ public class Product {
 
     protected String comment;
 
-    protected String status; //VENDU, LOUER ...
+    @Enumerated(EnumType.STRING)
+    protected ProductStatus status; //VENDU, LOUER ...
 
     protected String title;
+
+
 }

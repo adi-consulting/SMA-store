@@ -12,6 +12,7 @@ import store.services.StoreService;
 
 import java.util.List;
 
+@CrossOrigin()
 @RestController
 public class StoreController {
 

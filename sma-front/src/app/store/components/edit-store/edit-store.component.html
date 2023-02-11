@@ -1,0 +1,29 @@
+<p>edit-store works!</p>
+<div class = "edit-store">
+    <button mat-stroked-button class="user-return-button" routerLink="../../../../../list">
+      <mat-icon inline="true" [ngStyle]="{'font-size' : '1vw'}">arrow_back_ios</mat-icon>
+      <span [ngStyle]="{'font-size' : '1vw'}">{{'back-to-users-list'}}</span>
+    </button>
+  
+    <h1>{{ 'edit-store'}}</h1>
+    <div>
+      <app-edit-store-info class="user-info" ></app-edit-store-info>
+      <mat-divider></mat-divider>
+      <app-edit-store-manage class="user-center"></app-edit-store-manage>
+    </div>
+  
+   
+      <button  >
+        <img 
+        
+          class="validateImg"
+          style = "width: 50px; height: 50px"
+          src="assets/img/TMP/white/button/validate.svg"
+          alt="{{'validate' | uppercase}}"
+          matTooltipPosition="above"
+          matTooltipClass="menu-tooltip"
+        />
+      </button>
+  
+  </div>
+  

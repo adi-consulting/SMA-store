@@ -1,0 +1,54 @@
+
+.edit-store {
+  border: 3px black solid;
+  height: 100%;
+}
+
+
+  
+  .user-return-button {
+    background-color: white;
+    color: #00A5AA;
+    border-color: #00A5AA;
+    margin: 0.25vw;
+    line-height: 1.75vw;
+    display: flex;
+    align-items: center;
+  }
+  
+  h1 {
+    font-size: 1.25vw;
+    margin-bottom: 1vw;
+    margin-right: 1vw;
+    margin-top: 1vw;
+  }
+  
+  
+  .user-info {
+    width: 60%;
+  }
+  
+  .user-center {
+    width: 100%;
+  }
+  
+ 
+  
+ 
+  
+  .validateImg {
+    background-color: #00a5aa;
+    padding: 3px;
+    border-radius: 3px;
+  }
+  
+  button {
+    align-self: center;
+    background: none;
+    border: none;
+    outline: none;
+    margin: 10px 5px;
+  }
+  
+  
+  

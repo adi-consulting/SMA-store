@@ -1,0 +1,58 @@
+<div  class="dialog" mat-dialog-content>
+    <p class="dialog-title">{{'Création boutique'}}</p>
+  
+    <form  [formGroup]="form">
+  
+      <div id="formDialog">
+          <div class="inputDiv" style="display: flex; flex-direction: column">
+            <label> {{'name' | titlecase}} </label>
+            <input [ngClass]="{'has-error': (form.get('name').errors || form.hasError('exists')) && (form.get('name').dirty)}" matInput formControlName="name" placeholder="name" >
+            <div class="errors" *ngIf="form.get('name').errors">
+              <mat-error *ngIf="form.get('name').hasError('required') && (form.get('name').touched || form.get('name').dirty)">
+                *{{'required-field'}}
+              </mat-error>
+            </div>
+          </div>
+
+          <div class="inputDiv" style="display: flex; flex-direction: column">
+            <label> {{'siren' | titlecase}} </label>
+            <input [ngClass]="{'has-error': (form.get('siren').errors || form.hasError('exists')) && (form.get('siren').dirty)}" matInput formControlName="siren" placeholder="siren" >
+            <div class="errors" *ngIf="form.get('siren').errors">
+              <mat-error *ngIf="form.get('siren').hasError('required') && (form.get('siren').touched || form.get('siren').dirty)">
+                *{{'required-field'}}
+              </mat-error>
+            </div>
+          </div>
+
+          <div class="inputDiv" style="display: flex; flex-direction: column">
+            <label> {{'group'}} </label>
+            <input [ngClass]="{'has-error': (form.get('group').errors || form.hasError('exists')) && (form.get('group').dirty)}" matInput formControlName="group" placeholder="group" >
+            <div class="errors" *ngIf="form.get('name').errors">
+              <mat-error *ngIf="form.get('group').hasError('required') && (form.get('group').touched || form.get('group').dirty)">
+                *{{'required-field'}}
+              </mat-error>
+            </div>
+          </div>
+  
+      </div>
+  
+    </form>
+  
+  </div>
+  
+  
+  <div class="dialog-actions" mat-dialog-actions>
+    <button type="button" id="btnValidation" [style.background-color]="form.invalid ? 'gray' : '#00a5aa'" (click)="addStore()" [disabled]="!form.valid" style=" height: 3rem; margin: auto;  width: 3rem; border-radius: 0.2rem;"
+            matTooltip="{{'validate' | uppercase}}"
+            matTooltipPosition="above"
+            matTooltipClass="menu-tooltip" mat-dialog-close>
+      <img src="assets/img/TMP/white/button/validate.svg" alt="validateButton" style="width: 2rem; ">
+    </button>
+    <mat-tooltip-component>
+  
+    </mat-tooltip-component>
+  </div>
+  
+  
+  
+  

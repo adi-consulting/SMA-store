@@ -1,0 +1,88 @@
+
+<div id="regionMenu">
+  <button (click)="openDialogAdd()" id="addButton">
+    <img
+      class="addImg"
+      src="assets/img/TMP/white/button/add.svg"
+      alt="{{'add-region' | uppercase}}"
+      
+      matTooltipPosition="above"
+      matTooltipClass="menu-tooltip"
+    /></button>
+</div>
+
+<div id="container">
+    <div id="pdaTable"> 
+      <!--table mat-table [dataSource]="dataSource">
+        <ng-container *ngFor="let column of displayedColumns | slice:0:-1 ; let index = index" matColumnDef="{{column}}">
+          <th mat-header-cell *matHeaderCellDef scope="col">{{column}}</th>
+          <td mat-cell *matCellDef="let element">{{element[column]}}</td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns; let i = index"></tr>
+    
+      </table-->
+
+      <table mat-table [dataSource]="dataSource" matSort>
+        <ng-container matColumnDef="shopName">
+          <th mat-header-cell *matHeaderCellDef scope="col" mat-sort-header>{{'shopName'}}</th>
+          <td mat-cell *matCellDef="let element">{{element?.shopName}}</td>
+        </ng-container>
+
+        <ng-container matColumnDef="code">
+          <th mat-header-cell *matHeaderCellDef scope="col" mat-sort-header>{{'code'}}</th>
+          <td mat-cell *matCellDef="let element">{{element?.code}}</td>
+        </ng-container>
+
+        <ng-container matColumnDef="groupId">
+          <th mat-header-cell *matHeaderCellDef scope="col" mat-sort-header>{{'groupId'}}</th>
+          <td mat-cell *matCellDef="let element">{{element?.groupId}}</td>
+        </ng-container>
+
+        <ng-container matColumnDef="manage">
+          <th mat-header-cell *matHeaderCellDef scope="col"></th>
+          <td mat-cell *matCellDef="let element">
+            <a routerLink="/stores/edit/{{getIdByCode(element.code)}}">
+              <img src="assets/img/TMP/black/buttons/editColor.svg"
+                   alt="{{'modify' | uppercase}}"
+                   matTooltip="{{'modify' | uppercase}}"
+                   matTooltipPosition="above"
+                   matTooltipClass="menu-tooltip">
+            </a>
+          </td>
+        </ng-container>
+
+        <!--ng-container matColumnDef="manage">
+          <th mat-header-cell *matHeaderCellDef scope="col"></th>
+          <td mat-cell *matCellDef="let element" style="min-width: 80px">
+            <a routerLink="/stores/edit/{{getIdByCode(element.code)}}">
+            <img src="assets/img/TMP/black/buttons/editColor.svg"
+                 style="width: 1.3rem"
+                 alt="EDIT"
+                 class="edit"
+                 matTooltip="{{'modify'| uppercase}}"
+                 matTooltipPosition="above"
+                 matTooltipClass="menu-tooltip">
+            </a>   
+            <img src="assets/img/TMP/black/buttons/delete.svg"
+                 style="width: 1rem; margin-left: 1rem"
+                 alt="DELETE"
+                 class="delete"
+                 (click)="deleteStore(element)"
+                 matTooltip="{{'delete' | uppercase}}"
+                 matTooltipPosition="above"
+                 matTooltipClass="menu-tooltip">
+          </td>
+        </ng-container-->
+
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+       <tr mat-row *matRowDef="let row; columns: displayedColumns; let i = index"></tr>
+
+      </table>
+
+    </div>
+  </div>
+
+  
